@@ -11,7 +11,7 @@ import UIKit
 protocol GenericProtocol {
     
     static var items:[Self]        { get }
-    var picture:Currency            { get }
+    var picture:Currency           { get }
     var name:String                { get }
     var title:String               { get }
     var amount:Int                 { get }
@@ -25,8 +25,8 @@ protocol GenericProtocol {
     case Fruit
     case Dolar
     case Euro
-     case Lira
-     case Libra
+    case Lira
+    case Libra
 }
 
 
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
             textView.text = "\(value)"
             viewDetails.addSubview(textView)
         })
-        button1.accessibilityAttributedValue
+        
         let button2 = MyButton(frame: v2.frame, data: gem[Int.random(in: (0...3))], completion:  {  [self] value in
             
 
